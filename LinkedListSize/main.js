@@ -173,6 +173,19 @@ class LinkedList {
     return true
 
   }
+
+  size(){
+    let counter = 0; //first element
+    let temp = this.head //count from first element
+
+
+    while(temp){ //iterate over temp
+      counter++
+      temp = temp.next
+    }
+
+    return counter;
+  }
 }
 
 //instance 
@@ -181,7 +194,6 @@ myLinkedList.push(1);
 myLinkedList.push(2);
 myLinkedList.push(3);
 console.log(myLinkedList.set(3, 13))
-console.log(myLinkedList.insert(0, 20))
-console.log(myLinkedList)
+console.log(myLinkedList.size())
 
 //push = allow us to add a new node at the end of linkedlist
