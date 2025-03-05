@@ -186,6 +186,10 @@ class LinkedList {
 
     return counter;
   }
+
+  clear(){
+    this.head = null
+  }
 }
 
 //instance 
@@ -194,6 +198,6 @@ myLinkedList.push(1);
 myLinkedList.push(2);
 myLinkedList.push(3);
 console.log(myLinkedList.set(3, 13))
-console.log(myLinkedList.size())
+console.log(myLinkedList.clear())
 
 //push = allow us to add a new node at the end of linkedlist
