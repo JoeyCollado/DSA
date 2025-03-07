@@ -17,6 +17,12 @@ class DoublyLinkedList{
       this.tail = this.head //point tail to head
       this.length = 1; //set length
     }
+
+    push(value){
+        //create new node
+        const newNdode = new Node(value)
+
+    }
 }
 
 //push
