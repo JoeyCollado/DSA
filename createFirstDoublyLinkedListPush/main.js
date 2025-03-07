@@ -21,4 +21,7 @@ class DoublyLinkedList{
 
 //push
 //create new dbll node
-//point to new dbll node
+//pre node point to new dbll node
+//get pointer of dbll to prev node
+//point tail to new node
+ 
