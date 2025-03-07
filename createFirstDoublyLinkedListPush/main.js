@@ -27,7 +27,13 @@ class DoublyLinkedList{
             this.tail = new node //point to new node
         }
 
-        
+        //push logic
+        this.tail.next = newNdode // point tail to new node
+        newNdode.prev = this.tail //point prev node to tail
+        this.tail = newNdode //point tail to new node
+
+        this.length++
+        return this
 
     }
 }
@@ -37,4 +43,7 @@ class DoublyLinkedList{
 //pre node point to new dbll node
 //get pointer of dbll to prev node
 //point tail to new node
- 
+
+let mydbll = new DoublyLinkedList(0) //1st value
+mydbll.push(1) //pushed value
+console.log(mydbll)
