@@ -21,6 +21,13 @@ class DoublyLinkedList{
     push(value){
         //create new node
         const newNdode = new Node(value)
+        //check if ll is empty
+        if(!this.head){ //if ll is not empty
+            this.head = new Node //point to new node
+            this.tail = new node //point to new node
+        }
+
+        
 
     }
 }
