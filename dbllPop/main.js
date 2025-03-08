@@ -45,7 +45,13 @@ class DoublyLinkedList{
 
         //create temp variable
         let temp = this.tail
+
+        if(this.length === 1){
+            this.head = null
+            this.tail = null
+        }
     }
+  
 }
 
 //oop
