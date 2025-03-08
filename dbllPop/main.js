@@ -42,6 +42,8 @@ class DoublyLinkedList{
 //create temp variable
 //point temp var to last linked list
 //take tail and move that to prev element
+//break chain of prev element and that element to remove it
+//provide null value to prev element to make it last
 
 let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
