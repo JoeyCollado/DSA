@@ -36,6 +36,10 @@ class DoublyLinkedList{
         return this
 
     }
+
+    pop(){
+        
+    }
 }
 
 //oop
