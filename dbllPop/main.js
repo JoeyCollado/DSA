@@ -50,6 +50,11 @@ class DoublyLinkedList{
             this.head = null
             this.tail = null
         }
+
+        this.tail = this.tail.prev
+        //break chain
+        this.tail.next = null
+        temp.prev = null
     }
   
 }
