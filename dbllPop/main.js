@@ -72,5 +72,6 @@ class DoublyLinkedList{
 let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
 mydbll.push(2) //pushed value
+mydbll.push(3) //pushed value
 
 console.log(mydbll)
