@@ -42,6 +42,9 @@ class DoublyLinkedList{
         if(this.length === 0){ //check length
            return undefined
         }
+
+        //create temp variable
+        let temp = this.tail
     }
 }
 
