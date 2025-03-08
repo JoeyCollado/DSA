@@ -38,11 +38,8 @@ class DoublyLinkedList{
     }
 }
 
-//push
-//create new dbll node
-//pre node point to new dbll node
-//get pointer of dbll to prev node
-//point tail to new node
+//oop
+//create temp variable
 
 let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
