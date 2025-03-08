@@ -40,6 +40,7 @@ class DoublyLinkedList{
 
 //oop
 //create temp variable
+//point temp var to last linked list
 
 let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
