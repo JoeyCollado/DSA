@@ -38,7 +38,10 @@ class DoublyLinkedList{
     }
 
     pop(){
-        
+
+        if(this.length === 0){ //check length
+           return undefined
+        }
     }
 }
 
