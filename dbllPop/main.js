@@ -55,6 +55,9 @@ class DoublyLinkedList{
         //break chain
         this.tail.next = null
         temp.prev = null
+        this.length --;
+
+        return temp
     }
   
 }
@@ -68,4 +71,6 @@ class DoublyLinkedList{
 
 let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
+mydbll.push(2) //pushed value
+
 console.log(mydbll)
