@@ -78,7 +78,7 @@ class DoublyLinkedList{
     }
   
 }
-
+//unshift = add new value to the beggining of dbll 
 //create new node
 //take the pointer of said node and point to next node (former first element)
 //take pointer of former first node to new node
@@ -89,4 +89,4 @@ mydbll.push(1) //pushed value
 mydbll.push(2) //pushed value
 mydbll.push(3) //pushed value
 mydbll.unshift(100);
-console.log(mydbll.pop())
+console.log(mydbll)
