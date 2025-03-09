@@ -60,7 +60,21 @@ class DoublyLinkedList{
         return temp
     }
     unshift(value){
-
+        //create new node
+        const newNode = new Node(value);
+        //check length
+        if(this.length === 0){
+            this.head = newNode //point head to new node
+            this.tail = newNode //point tail to new node
+            
+        }
+        //else
+        newNode.next = this.head //
+        //
+        this.head.prev = newNode //take the property of previous node and point it to new node
+        this.head = newNode //point head to new node
+        this.length ++
+        return this;
     }
   
 }
@@ -74,5 +88,5 @@ let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
 mydbll.push(2) //pushed value
 mydbll.push(3) //pushed value
-
+mydbll.unshift(100);
 console.log(mydbll.pop())
