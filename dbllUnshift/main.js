@@ -59,15 +59,16 @@ class DoublyLinkedList{
 
         return temp
     }
+    unshift(value){
+
+    }
   
 }
 
-//oop
-//create temp variable
-//point temp var to last linked list
-//take tail and move that to prev element
-//break chain of prev element and that element to remove it
-//provide null value to prev element to make it last
+//create new node
+//take the pointer of said node and point to next node (former first element)
+//take pointer of former first node to new node
+//take head and point to new node
 
 let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
