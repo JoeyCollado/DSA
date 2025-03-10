@@ -76,13 +76,13 @@ class DoublyLinkedList{
         this.length ++
         return this;
     }
+    shift(){
+        
+    }
   
 }
-//unshift = add new value to the beggining of dbll 
-//create new node
-//take the pointer of said node and point to next node (former first element)
-//take pointer of former first node to new node
-//take head and point to new node
+//shift =
+//
 
 let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
