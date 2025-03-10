@@ -77,16 +77,38 @@ class DoublyLinkedList{
         return this;
     }
     shift(){
-        
+        if(this.length === 0){
+            return undefined
+        }
+       //point temp var to head
+        let temp = this.head
+       //
+       if(this.length === 1){ // if we only have one node
+        this.head = null
+        this.tail = null
+       }
+       //point head of current node to next node
+       this.head = this.head.next
+       //take property of next and set it to null to break connectino with prev node
+       this.head.prev = null
+       //take value of prev node and set it to null
+       temp.next = null
+       // remove element
+       this.length --;
+       return temp
     }
   
 }
-//shift =
-//
+//shift = remove first element from linked list
+//take head and point to next element
+//take next property to prev and break connection by setting it to null
+//take prev connection to next and set it to null to break
+//remove first element and set that to null
+
 
 let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
 mydbll.push(2) //pushed value
 mydbll.push(3) //pushed value
-mydbll.unshift(100);
+mydbll.shift();
 console.log(mydbll)
