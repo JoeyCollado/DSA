@@ -99,12 +99,28 @@ class DoublyLinkedList{
     }
 
     reversed(){
-        
+      //create three pointers
+      let temp = this.head() // point to first node of LL
+      this.head = this.tail // point it to the tail
+      this.tail = temp // point tail to temp which is in head
+
+
+      //create two other pointers
+      let next = temp; //create another pointer (next) and point it to first node
+      let prev = null; // create another pointer (prev) and point it to null value
+
+      //iterate over through each item
+      for(let i = 0; i < this.length; i++){
+        next = temp.next; //temporary pointer, (head to the next element)
+        temp.next = prev; //flip the arrow, head is now pointed to null
+        prev = temp; //
+      }
     }
   
 }
-//reversedLL =
-//
+//reversedLL = 
+//switch head and the tails
+//reverse the arrows
 
 let mydbll = new DoublyLinkedList(0) //1st value
 mydbll.push(1) //pushed value
