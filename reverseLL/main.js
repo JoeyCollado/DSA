@@ -125,8 +125,8 @@ class DoublyLinkedList{
 //reverse the arrows
 
 let mydbll = new DoublyLinkedList(0) //1st value
-mydbll.push(1) //pushed value
 mydbll.push(2) //pushed value
 mydbll.push(3) //pushed value
-mydbll.shift();
+mydbll.push(4) //pushed value
+mydbll.reversed();
 console.log(mydbll)
