@@ -113,7 +113,9 @@ class DoublyLinkedList{
       for(let i = 0; i < this.length; i++){
         next = temp.next; //temporary pointer, (head to the next element)
         temp.next = prev; //flip the arrow, head is now pointed to null
-        prev = temp; //
+        prev = temp; //remove null and point to first element
+        temp = next; // take temp and point to second element, this will finish the 1st iteration then repeat
+        
       }
     }
   
