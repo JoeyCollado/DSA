@@ -1,23 +1,29 @@
-//Stack & Queue =
-
-//Stack = linear data structure that follows LIFO principle
-//push
-//pop
-//top
-
-//queue
-//enqueue
-//dequeue
-
-//common interview questions
-//Min stack
-//Valid parenthesis
-//Reverse String using stack
-
-//we still use the node visualization same as Linked list node, it has value and reference
-//but instead of head and tail we treat it as first and last (top or bottom)
-
+/*
 {
-  value: 1,
-  next: null
+value: 1,
+next: null
 }
+*/
+
+
+class Node {           //create a node
+  constructor(value){
+    this.value = value
+    this.next = null 
+  }
+}
+
+//create stack based on node
+
+class myStack {
+  constructor(value){
+    //create own node
+    const newNode = new Node(value)
+    this.first = newNode
+    this.length = 1;
+  }
+}
+
+//instance
+let stack = new myStack(0)
+console.log(myStack)
