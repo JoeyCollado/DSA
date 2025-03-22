@@ -56,6 +56,7 @@ class myStack {
 let stack = new myStack(0)
 stack.push(1)
 stack.push(2)
+stack.pop();
 console.log(stack)
 
 //create temp var, should be pointing first node
