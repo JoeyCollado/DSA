@@ -36,6 +36,20 @@ class myStack {
     this.length ++;
     return this;
   }
+  pop(value){
+    if(this.length === 0){
+      return undefined;
+    }
+
+    let temp = this.first; //create temp var, should be pointing first node
+    this.first = this.first.next //take first pointer and point it to next node
+    this.first = null;
+
+    temp.next = null //set first node to null to remove
+
+    this.length--;
+    return temp;
+  }
 }
 
 //instance
@@ -44,6 +58,6 @@ stack.push(1)
 stack.push(2)
 console.log(stack)
 
-//push
-//create own node
-//take first marker and point to newly created node
+//create temp var, should be pointing first node
+//take first pointer and point it to next node
+//set first node to null to remove
