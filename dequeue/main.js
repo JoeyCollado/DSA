@@ -1,11 +1,6 @@
-//enqueue = add new element at the end
 
-//create newly added element
-//newly created element point to null
-//take last pointer and point to newly created node
 
 //create node
-
 class Node{
     constructor(value){
         this.value = value
@@ -38,6 +33,28 @@ class Queue{
     this.length ++
     return this
    }
+
+   dequeue(){
+
+    if(this.length === 0){
+       return undefined
+    }
+
+    let temp = this.first 
+
+    if(this.length === 1){
+        this.first = null
+        this.last = null
+    }
+
+    this.first = this.first.next // point pointer to next node (prev node) coz first in first out
+    temp.next = null //remove last element 
+    this.length--
+
+    return temp;
+
+  
+   }
 }
 
 let myQueue = new Queue(0) //zero initial value
@@ -45,3 +62,7 @@ myQueue.enqueue(1)
 myQueue.enqueue(2)
 console.log(myQueue)
 
+//dequeue = remove last element from queue
+
+//take pointer from last element , point to prev one (null)
+//
