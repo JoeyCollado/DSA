@@ -60,6 +60,7 @@ class Queue{
 let myQueue = new Queue(0) //zero initial value
 myQueue.enqueue(1)
 myQueue.enqueue(2)
+myQueue.dequeue();
 console.log(myQueue)
 
 //dequeue = remove last element from queue
