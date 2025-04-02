@@ -7,15 +7,15 @@ function reverseString(str){
         stack.push(char)
     }
     //initialize an empty string
-    let reverseStr = "";
+    let reversedStr = "";
 
     //pop each character from stack
     while(stack.length > 0){
-        reverseStr += stack.pop();
+        reversedStr += stack.pop();
     }
 
-    return reverseStr;
+    return reversedStr;
 }
 
-const reverseString = reverseString("Hello World");
-console.log(reverseString)
+const reversedString = reverseString("Hello World");
+console.log(reversedString)
